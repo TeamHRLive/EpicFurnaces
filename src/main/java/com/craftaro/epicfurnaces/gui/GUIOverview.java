@@ -89,41 +89,41 @@ public class GUIOverview extends CustomizableGui {
         if (level.getPerformance() != 0) {
             setItem("performance", infoIconOrder[num][current++], GuiUtils.createButtonItem(
                     Settings.PERFORMANCE_ICON.getMaterial(XMaterial.REDSTONE),
-                    this.plugin.getLocale().getMessage("interface.furnace.performancetitle").getMessage(),
+                    this.plugin.getLocale().getMessage("interface.furnace.performancetitle").toText(),
                     this.plugin.getLocale().getMessage("interface.furnace.performanceinfo")
-                            .processPlaceholder("amount", level.getPerformance()).getMessageLines('|')));
+                            .processPlaceholder("amount", level.getPerformance()).toText().split("\\|")));
         }
         if (level.hasReward()) {
             setItem("reward", infoIconOrder[num][current++], GuiUtils.createButtonItem(
                     Settings.REWARD_ICON.getMaterial(XMaterial.GOLDEN_APPLE),
-                    this.plugin.getLocale().getMessage("interface.furnace.rewardtitle").getMessage(),
+                    this.plugin.getLocale().getMessage("interface.furnace.rewardtitle").toText(),
                     this.plugin.getLocale().getMessage("interface.furnace.rewardinfo")
                             .processPlaceholder("amount", level.getRewardPercent())
-                            .getMessageLines('|')));
+                            .toText().split("\\|")));
         }
         if (level.getFuelDuration() != 0) {
             setItem("fuel", infoIconOrder[num][current++], GuiUtils.createButtonItem(
                     Settings.FUEL_DURATION_ICON.getMaterial(XMaterial.COAL),
-                    this.plugin.getLocale().getMessage("interface.furnace.fueldurationtitle").getMessage(),
+                    this.plugin.getLocale().getMessage("interface.furnace.fueldurationtitle").toText(),
                     this.plugin.getLocale().getMessage("interface.furnace.fueldurationinfo")
                             .processPlaceholder("amount", level.getFuelDuration())
-                            .getMessageLines('|')));
+                            .toText().split("\\|")));
         }
         if (level.getFuelShare() != 0) {
             setItem("fuel_share", infoIconOrder[num][current++], GuiUtils.createButtonItem(
                     Settings.FUEL_SHARE_ICON.getMaterial(XMaterial.COAL_BLOCK),
-                    this.plugin.getLocale().getMessage("interface.furnace.fuelsharetitle").getMessage(),
+                    this.plugin.getLocale().getMessage("interface.furnace.fuelsharetitle").toText(),
                     this.plugin.getLocale().getMessage("interface.furnace.fuelshareinfo")
                             .processPlaceholder("amount", level.getOverheat() * 3)
-                            .getMessageLines('|')));
+                            .toText().split("\\|")));
         }
         if (level.getOverheat() != 0) {
             setItem("overheat", infoIconOrder[num][current++], GuiUtils.createButtonItem(
                     Settings.OVERHEAT_ICON.getMaterial(XMaterial.FIRE_CHARGE),
-                    this.plugin.getLocale().getMessage("interface.furnace.overheattitle").getMessage(),
+                    this.plugin.getLocale().getMessage("interface.furnace.overheattitle").toText(),
                     this.plugin.getLocale().getMessage("interface.furnace.overheatinfo")
                             .processPlaceholder("amount", level.getOverheat() * 3)
-                            .getMessageLines('|')));
+                            .toText().split("\\|")));
         }
 
         // remote control
