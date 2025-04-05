@@ -1,6 +1,6 @@
 package com.craftaro.epicfurnaces.handlers;
 
-import com.craftaro.core.configuration.Config;
+import com.songoda.core.configuration.Config;
 import org.bukkit.World;
 import org.bukkit.plugin.Plugin;
 

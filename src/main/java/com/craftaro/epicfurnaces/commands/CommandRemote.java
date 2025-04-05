@@ -1,6 +1,6 @@
 package com.craftaro.epicfurnaces.commands;
 
-import com.craftaro.core.commands.AbstractCommand;
+import com.songoda.core.commands.AbstractCommand;
 import com.craftaro.epicfurnaces.settings.Settings;
 import com.craftaro.epicfurnaces.EpicFurnaces;
 import com.craftaro.epicfurnaces.furnace.Furnace;

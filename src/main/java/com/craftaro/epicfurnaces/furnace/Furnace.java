@@ -1,15 +1,15 @@
 package com.craftaro.epicfurnaces.furnace;
 
-import com.craftaro.core.compatibility.CompatibleMaterial;
-import com.craftaro.core.compatibility.ServerVersion;
-import com.craftaro.core.database.Data;
-import com.craftaro.core.database.SerializedLocation;
-import com.craftaro.core.gui.GuiManager;
-import com.craftaro.core.hooks.EconomyManager;
-import com.craftaro.core.hooks.ProtectionManager;
-import com.craftaro.core.math.MathUtils;
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
-import com.craftaro.third_party.com.cryptomorin.xseries.XSound;
+import com.songoda.core.compatibility.CompatibleMaterial;
+import com.songoda.core.compatibility.ServerVersion;
+import com.songoda.core.database.Data;
+import com.songoda.core.database.SerializedLocation;
+import com.songoda.core.gui.GuiManager;
+import com.songoda.core.hooks.EconomyManager;
+import com.songoda.core.hooks.ProtectionManager;
+import com.songoda.core.math.MathUtils;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.third_party.com.cryptomorin.xseries.XSound;
 import com.craftaro.epicfurnaces.EpicFurnaces;
 import com.craftaro.epicfurnaces.level.Level;
 import com.craftaro.epicfurnaces.settings.Settings;

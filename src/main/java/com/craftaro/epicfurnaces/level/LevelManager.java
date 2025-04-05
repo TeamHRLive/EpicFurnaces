@@ -1,6 +1,6 @@
 package com.craftaro.epicfurnaces.level;
 
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
 
 import java.util.Collections;
 import java.util.Map;

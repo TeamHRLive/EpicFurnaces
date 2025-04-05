@@ -1,7 +1,7 @@
 package com.craftaro.epicfurnaces.storage;
 
-import com.craftaro.core.configuration.Config;
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.core.configuration.Config;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
 import com.craftaro.epicfurnaces.EpicFurnaces;
 import com.craftaro.epicfurnaces.boost.BoostData;
 import com.craftaro.epicfurnaces.furnace.Furnace;

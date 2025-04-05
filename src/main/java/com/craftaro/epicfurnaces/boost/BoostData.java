@@ -1,6 +1,6 @@
 package com.craftaro.epicfurnaces.boost;
 
-import com.craftaro.core.database.Data;
+import com.songoda.core.database.Data;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

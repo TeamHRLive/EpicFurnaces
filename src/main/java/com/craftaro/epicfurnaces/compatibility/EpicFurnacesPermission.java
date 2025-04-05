@@ -1,8 +1,8 @@
 package com.craftaro.epicfurnaces.compatibility;
 
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
-import com.craftaro.skyblock.permission.BasicPermission;
-import com.craftaro.skyblock.permission.PermissionType;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.skyblock.permission.BasicPermission;
+import com.songoda.skyblock.permission.PermissionType;
 
 public class EpicFurnacesPermission extends BasicPermission {
     public EpicFurnacesPermission() {

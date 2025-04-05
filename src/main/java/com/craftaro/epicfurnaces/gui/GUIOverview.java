@@ -1,13 +1,13 @@
 package com.craftaro.epicfurnaces.gui;
 
-import com.craftaro.core.compatibility.CompatibleMaterial;
-import com.craftaro.core.gui.CustomizableGui;
-import com.craftaro.core.gui.GuiUtils;
-import com.craftaro.core.input.ChatPrompt;
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
-import com.craftaro.core.utils.NumberUtils;
-import com.craftaro.core.utils.TextUtils;
-import com.craftaro.core.utils.TimeUtils;
+import com.songoda.core.compatibility.CompatibleMaterial;
+import com.songoda.core.gui.CustomizableGui;
+import com.songoda.core.gui.GuiUtils;
+import com.songoda.core.input.ChatPrompt;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.core.utils.NumberUtils;
+import com.songoda.core.utils.TextUtils;
+import com.songoda.core.utils.TimeUtils;
 import com.craftaro.epicfurnaces.EpicFurnaces;
 import com.craftaro.epicfurnaces.boost.BoostData;
 import com.craftaro.epicfurnaces.furnace.Furnace;

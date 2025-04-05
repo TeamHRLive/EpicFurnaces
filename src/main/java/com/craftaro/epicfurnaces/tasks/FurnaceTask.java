@@ -1,6 +1,6 @@
 package com.craftaro.epicfurnaces.tasks;
 
-import com.craftaro.core.compatibility.CompatibleParticleHandler;
+import com.songoda.core.compatibility.CompatibleParticleHandler;
 import com.craftaro.epicfurnaces.EpicFurnaces;
 import com.craftaro.epicfurnaces.furnace.Furnace;
 import com.craftaro.epicfurnaces.settings.Settings;
