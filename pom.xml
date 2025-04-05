@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.craftaro</groupId>
+    <groupId>com.songoda</groupId>
     <artifactId>EpicFurnaces</artifactId>
     <version>5.6.0</version>
 
     <name>EpicFurnaces</name>
     <description>EpicFurnaces allows you to upgrade basic Minecraft features to make the game way more entertaining</description>
-    <url>https://craftaro.com/marketplace/product/22</url>
+    <url>https://songoda.com/product/epicfurnaces-6</url>
 
     <properties>
         <maven.compiler.release>8</maven.compiler.release>
@@ -17,14 +17,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <issueManagement>
-        <url>https://discord.gg/craftaro</url>
-        <system>Discord server</system>
-    </issueManagement>
-
     <scm>
-        <url>https://github.com/craftaro/EpicFurnaces</url>
-        <connection>scm:git:git://github.com/craftaro/EpicFurnaces.git</connection>
+        <url>https://github.com/Songoda-Plugins/EpicFurnaces</url>
+        <connection>scm:git:git://github.com/Songoda-Plugins/EpicFurnaces.git</connection>
     </scm>
 
     <build>
@@ -50,8 +45,8 @@
 
                             <relocations>
                                 <relocation>
-                                    <pattern>com.craftaro.core</pattern>
-                                    <shadedPattern>com.craftaro.epicfurnaces.core</shadedPattern>
+                                    <pattern>com.songoda.core</pattern>
+                                    <shadedPattern>com.songoda.epicfurnaces.core</shadedPattern>
                                 </relocation>
                             </relocations>
 
@@ -67,7 +62,7 @@
                                 </filter>
 
                                 <filter>
-                                    <artifact>com.craftaro:CraftaroCore</artifact>
+                                    <artifact>com.songoda:SongodaCore</artifact>
                                     <excludeDefaults>false</excludeDefaults>
                                     <includes>
                                         <include>**/nms/v*/**</include>
@@ -134,9 +129,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.craftaro</groupId>
+            <groupId>com.songoda</groupId>
             <artifactId>EpicHoppers-API</artifactId>
-            <version>5.0.0-SNAPSHOT-tmp</version>
+            <version>1.0.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

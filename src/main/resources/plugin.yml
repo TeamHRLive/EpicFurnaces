@@ -3,7 +3,7 @@ description: ${project.description}
 version: ${project.version}
 api-version: 1.13
 
-main: com.craftaro.epicfurnaces.EpicFurnaces
+main: com.songoda.epicfurnaces.EpicFurnaces
 softdepend:
   - BentoBox
   - DecentHolograms
@@ -21,7 +21,7 @@ softdepend:
   - Vault
   - WorldGuard
 
-author: Craftaro
+author: Songoda
 website: ${project.url}
 
 commands:
