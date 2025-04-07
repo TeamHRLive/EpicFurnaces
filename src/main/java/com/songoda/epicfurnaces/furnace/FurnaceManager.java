@@ -11,9 +11,10 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class FurnaceManager {
-    private final Map<Location, Furnace> registeredFurnaces = new HashMap<>();
+    private final Map<Location, Furnace> registeredFurnaces = new ConcurrentHashMap<>();
     private final Multimap<GameArea, Furnace> tickingFurnaces = MultimapBuilder.hashKeys().hashSetValues().build();
 
     public Furnace addFurnace(Furnace furnace) {
