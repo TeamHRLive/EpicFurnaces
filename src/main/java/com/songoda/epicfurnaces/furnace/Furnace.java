@@ -228,7 +228,11 @@ public class Furnace implements Data {
     }
 
     private void syncName() {
-        org.bukkit.block.Furnace furnace = (org.bukkit.block.Furnace) this.location.getBlock().getState();
+        BlockState state = this.location.getBlock().getState();
+        if (!(state instanceof org.bukkit.block.Furnace)) {
+            return;
+        }
+        org.bukkit.block.Furnace furnace = (org.bukkit.block.Furnace) state;
         if (ServerVersion.isServerVersionAtLeast(ServerVersion.V1_10)) {
             furnace.setCustomName(Methods.formatName(this.level.getLevel()));
         }
@@ -242,15 +246,23 @@ public class Furnace implements Data {
         }
 
         Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this.plugin, () -> {
-            int num = getPerformanceTotal(block.getType());
+            Block currentBlock = this.location.getBlock();
+            if (!currentBlock.getType().name().contains("FURNACE") && !currentBlock.getType().name().contains("SMOKER")) {
+                return;
+            }
 
-            int max = (block.getType().name().contains("BLAST") || block.getType().name().contains("SMOKER") ? 100 : 200);
+            int num = getPerformanceTotal(currentBlock.getType());
+
+            int max = (currentBlock.getType().name().contains("BLAST") || currentBlock.getType().name().contains("SMOKER") ? 100 : 200);
             if (num >= max) {
                 num = max - 1;
             }
 
             if (num != 0) {
-                BlockState bs = (block.getState());
+                BlockState bs = currentBlock.getState();
+                if (!(bs instanceof org.bukkit.block.Furnace)) {
+                    return;
+                }
                 ((org.bukkit.block.Furnace) bs).setCookTime(Short.parseShort(Integer.toString(num)));
                 bs.update();
             }
