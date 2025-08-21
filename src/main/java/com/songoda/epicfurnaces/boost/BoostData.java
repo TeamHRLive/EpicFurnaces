@@ -60,7 +60,7 @@ public class BoostData implements Data {
         Map<String, Object> map = new LinkedHashMap<>();
         map.put("player", this.player);
         map.put("multiplier", this.multiplier);
-        map.put("endTime", this.endTime);
+        map.put("end_time", this.endTime);
         return map;
     }
 
